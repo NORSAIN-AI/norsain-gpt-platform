@@ -1,0 +1,23 @@
+<type>: <short summary>
+
+# Types:
+# feat     – new feature
+# fix      – bug fix
+# docs     – documentation-only changes
+# refactor – refactoring without behaviour change
+# perf     – performance improvement
+# test     – add or update tests
+# chore    – maintenance tasks
+# build    – build system or dependency changes
+
+# Summary:
+# - Max 70 characters
+# - Imperative mood (“add”, “update”, “fix”)
+# - No emojis, no fluff
+
+# Body (optional):
+# - Explain the reason for the change
+# - Keep it concise and technical
+
+# Footer (optional):
+# - Issues: Fixes #123 or Related to #456
