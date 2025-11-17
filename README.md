@@ -16,7 +16,6 @@ Plattform for å utvikle og drifte Custom GPT-er med TypeScript-baserte verktøy
 
 Strukturert plattform for å bygge og vedlikeholde Custom GPT-er med:
 
-
 ## Arkitektur og mappestruktur
 
 ```text
