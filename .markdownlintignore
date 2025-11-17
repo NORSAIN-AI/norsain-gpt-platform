@@ -1,0 +1,10 @@
+# Ignore third-party and build artifacts
+node_modules/
+dist/
+build/
+coverage/
+.next/
+.vercel/
+
+# Generated or long-line reports (optional)
+reports/

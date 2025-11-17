@@ -66,7 +66,8 @@
   // Heading punctuation rules
   // --------------------------------------------------------------
   "MD026": {
-    "punctuation": ".,:;!?()[]{}"
+    // Allow parentheses in headings like "Kvalitetsregler (NGAS)"
+    "punctuation": ".,:;!?"
   },
 
   // --------------------------------------------------------------

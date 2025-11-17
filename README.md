@@ -16,11 +16,6 @@ Plattform for å utvikle og drifte Custom GPT-er med TypeScript-baserte verktøy
 
 Strukturert plattform for å bygge og vedlikeholde Custom GPT-er med:
 
-- Maks 20 kunnskapsfiler per GPT (i tråd med plattformbegrensninger)
-- TypeScript-CLI for scaffolding, validering og indeksgenerering
-- Standardiserte maler for agenter og actions (OpenAPI 3.1)
-- GitHub Actions for automatisk validering og PR-automatisering
-
 
 ## Arkitektur og mappestruktur
 

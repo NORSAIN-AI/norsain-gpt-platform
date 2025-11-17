@@ -9,6 +9,7 @@ This directory contains TypeScript-based CLI tools for managing Custom GPTs.
 Creates a new Custom GPT from the template.
 
 **Usage:**
+
 ```bash
 npm run scaffold <gpt-name> [options]
 
@@ -18,10 +19,12 @@ Options:
   --tags <tag1,tag2>      Comma-separated tags
 
 Example:
+
   npm run scaffold my-assistant --description "A helpful assistant" --tags "helper,assistant"
 ```
 
 **What it does:**
+
 1. Copies the `_template` directory to create a new GPT
 2. Updates `gpt.json` with provided metadata
 3. Replaces placeholders in instructions and actions
@@ -32,6 +35,7 @@ Example:
 Validates GPT directory structure and configuration.
 
 **Usage:**
+
 ```bash
 npm run validate [gpt-name]
 
@@ -43,6 +47,7 @@ npm run validate
 ```
 
 **Checks:**
+
 - Required directories exist (instructions, actions, knowledge)
 - `gpt.json` configuration file exists
 - Knowledge directory has ≤ 20 files
@@ -53,6 +58,7 @@ npm run validate
 Generates an index.md file listing all knowledge files.
 
 **Usage:**
+
 ```bash
 npm run generate-index [gpt-name]
 
@@ -64,7 +70,9 @@ npm run generate-index
 ```
 
 **Output:**
+
 Creates `knowledge/index.md` with:
+
 - File count (X / 20)
 - Grouped file listings
 - Links to all knowledge files
@@ -74,18 +82,21 @@ Creates `knowledge/index.md` with:
 ### `utils/scaffolding.mts`
 
 Core scaffolding functionality:
+
 - `scaffoldGPT()` - Creates new GPT from template
 - `getProjectRoot()` - Gets project root directory
 
 ### `utils/validation.mts`
 
 Validation utilities:
+
 - `validateGPTStructure()` - Validates GPT directory structure
 - `countFiles()` - Counts files in a directory recursively
 
 ### `utils/indexing.mts`
 
 Index generation utilities:
+
 - `generateKnowledgeIndex()` - Scans knowledge directory
 - `createKnowledgeIndexFile()` - Creates index.md file
 
@@ -124,9 +135,11 @@ npm run format
 ## Architecture
 
 All scripts use ES modules (`.mts` extension) with:
+
 - **TypeScript**: For type safety and better developer experience
 - **Node.js built-ins**: `fs/promises`, `path`, etc.
 - **No external dependencies**: Keeps runtime dependencies minimal
+
 
 ## Adding New Scripts
 
