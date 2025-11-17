@@ -1,0 +1,14 @@
+{
+  "name": "my-assistant",
+  "version": "1.0.0",
+  "description": "Custom GPT: my-assistant",
+  "created": "2025-11-17T18:02:36.209Z",
+  "author": "NORSAIN-AI",
+  "tags": [],
+  "maxKnowledgeFiles": 20,
+  "structure": {
+    "instructions": "instructions/main.md",
+    "actions": "actions/schema.json",
+    "knowledge": "knowledge/"
+  }
+}
