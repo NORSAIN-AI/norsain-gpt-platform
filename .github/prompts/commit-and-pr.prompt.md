@@ -34,3 +34,7 @@ Given my staged changes (I will paste them next), generate:
 
 Ask no questions. Return only the final commit + PR text.
 
+permissions:
+  contents: write
+  pull-requests: write
+
