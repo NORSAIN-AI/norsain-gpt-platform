@@ -1,10 +1,23 @@
-# Gemini 2.5 Pro
+---
+model_id: gemini-2.5-pro
+title: Gemini 2.5 Pro – Model Description
+version: 1.0.0
+owner: NORSAIN Engineering Governance
+status: Approved
+tags: [large-context, analysis, architecture, multimodal]
+---
 
-Summary: Gemini 2.5 Pro is a high-performance model in the Gemini family offering strong multimodal and reasoning capabilities (where supported by platform).
+# Gemini 2.5 Pro – Model Description
 
-Strengths:
-- Strong multimodal reasoning and high-quality generation
-- Good for complex workflows combining code, text, and structured data
+**Formål:**
+Kraftig modell for stor kontekst, analyse og tekniske vurderinger.
 
-Recommended use cases:
-- Multimodal assistants, data-to-text pipelines, advanced agent systems.
+## Egenskaper
+- Svært høy kontekstkapasitet.
+- God på multimodal innsikt.
+- Sterk på tekniske strukturer og dype analyser.
+
+## Typiske bruksområder
+- Arkitekturdrøftelser
+- Multi-repo analyser
+- Kompleks systemtenking

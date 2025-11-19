@@ -1,10 +1,23 @@
-# Claude Haiku 4.5
+---
+model_id: claude-haiku-4.5
+title: Claude Haiku 4.5 – Model Description
+version: 1.0.0
+owner: NORSAIN Engineering Governance
+status: Approved
+tags: [fast, text, low-cost]
+---
 
-Summary: Claude Haiku 4.5 is a poetic / creative-tuned variant of the Claude 4.5 family, optimized for concise, lyrical output and stylistic generation.
+# Claude Haiku 4.5 – Model Description
 
-Strengths:
-- High-quality creative writing and style tuning
-- Good for marketing copy, short-form creative tasks
+**Formål:**
+Rask, rimelig og svært sterk tekstkvalitet i mini-klassen.
 
-Recommended use cases:
-- Slogans, creative writing assistants, short-form content generation.
+## Egenskaper
+- Presis, ren og klar tekststruktur.
+- God på dokumentasjon.
+- Moderat kodeforståelse.
+
+## Typiske bruksområder
+- Notater
+- Korte QMS-/IMS-dokumenter
+- Rask språkstøtte

@@ -1,10 +1,23 @@
-# GPT-5-Codex
+---
+model_id: gpt-5-codex
+title: GPT-5 Codex – Model Description
+version: 1.0.0
+owner: NORSAIN Engineering Governance
+status: Approved
+tags: [code, refactoring]
+---
 
-Summary: GPT-5-Codex is an earlier code-focused variant from the GPT-5 line designed to provide dependable completions and code transformations with balanced latency and throughput.
+# GPT-5 Codex – Model Description
 
-Strengths:
-- Solid code generation and comprehension
-- Lower cost/latency tradeoff compared to larger GPT-5 family variants
+**Formål:**
+Robust kodemodell når man ikke trenger full 5.1-presisjon.
 
-Recommended use cases:
-- Automated code assistants, code generation endpoints, and developer tooling.
+## Egenskaper
+- God kodegenerering i alle hovedspråk.
+- Forståelig, stabil og raskere enn 5.1 Codex.
+- Passer godt til middels komplekse systemer.
+
+## Typiske bruksområder
+- Refaktorering i mindre repoer
+- Kodegenerering for moduloppstart
+- Testkodeproduksjon

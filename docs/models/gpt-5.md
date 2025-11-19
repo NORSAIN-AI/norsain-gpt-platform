@@ -1,10 +1,23 @@
-# GPT-5
+---
+model_id: gpt-5
+title: GPT-5 – Model Description
+version: 1.0.0
+owner: NORSAIN Engineering Governance
+status: Approved
+tags: [architecture, documentation, reasoning]
+---
 
-Summary: GPT-5 is a high-capability large language model suitable for complex reasoning, summarization, and multi-modal workflows where available.
+# GPT-5 – Model Description
 
-Strengths:
-- Strong reasoning and context handling
-- Good for enterprise-grade assistants and analytic workflows
+**Formål:**
+Allround-modell for tekst, kode og design.
 
-Recommended use cases:
-- Knowledge worker assistants, domain-specific summarizers, and advanced decision support.
+## Egenskaper
+- Sterk på systemtenkning og språk.
+- Balansert ytelse for dokument + kode i samme forespørsel.
+- Stabil kontekstforståelse.
+
+## Typiske bruksområder
+- Overordnet systemskisser
+- Dokumentstrukturering
+- PM-arbeid

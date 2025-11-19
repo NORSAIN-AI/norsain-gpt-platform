@@ -1,10 +1,23 @@
-# GPT-4o
+---
+model_id: gpt-4o
+title: GPT-4o – Model Description
+version: 1.0.0
+owner: NORSAIN Engineering Governance
+status: Approved
+tags: [balanced, multimodal, documentation, code]
+---
 
-Summary: GPT-4o is an efficient, capable model designed for conversational and general-purpose tasks with a focus on latency and cost effectiveness.
+# GPT-4o – Model Description
 
-Strengths:
-- Good conversational fluency
-- Faster and cheaper than larger models while retaining quality for many tasks
+**Formål:**
+Balansert kvalitet, hastighet og pris – god allround-modell.
 
-Recommended use cases:
-- Chat assistants, FAQ bots, and real-time interactive systems.
+## Egenskaper
+- Sterk multimodal kapasitet.
+- God kodeforståelse, men ikke på nivå med Codex.
+- Meget god språkføring.
+
+## Typiske bruksområder
+- Arkitekturdrøftelser
+- Rask kode + dokumentkombinasjon
+- Multimodal innsikt

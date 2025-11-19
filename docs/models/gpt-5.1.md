@@ -1,13 +1,25 @@
-# GPT-5.1
+---
+model_id: gpt-5.1
+title: GPT-5.1 – Model Description
+version: 1.0.0
+status: Approved
+owner: NORSAIN Engineering Governance
+tags: [architecture, analysis, reasoning, qms]
+---
 
-Summary: GPT-5.1 is a next-generation high-capacity general-purpose model in the GPT-5 family. It offers strong reasoning, summarization, and multi-domain generation capabilities.
+# GPT-5.1 – Model Description
 
-Strengths:
-- High-quality natural language generation and reasoning
-- Strong multi-step and instruction-following performance
+**Formål:**
+Beste allround-modellen for arkitektur, resonnement og systemanalyse.
 
-Recommended use cases:
-- Long-form generation, technical writing, analysis, and multi-turn assistants.
+## Egenskaper
+- Sterk på komplekse systemdesign.
+- Ekstremt god kontekst- og årsak/virkning-forståelse.
+- God balanse mellom teknisk presisjon og språkproduksjon.
+- Optimal for MAS-/MCP-arkitektur.
 
-Notes:
-- Choose temperature and decoding settings depending on whether you need creativity or determinism.
+## Typiske bruksområder
+- Arkitektur og design
+- QMS-, IMS- og dokumentanalyser
+- MCP- og MAS-modellteori
+

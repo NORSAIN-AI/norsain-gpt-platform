@@ -1,10 +1,23 @@
-# raptor-mini
+---
+model_id: raptor-mini
+title: Raptor Mini (Preview) – Model Description
+version: 1.0.0
+owner: NORSAIN Engineering Governance
+status: Approved
+tags: [speed, drafts, low-cost]
+---
 
-Summary: `raptor-mini` is a compact model suitable for edge-like deployments or constrained budget scenarios requiring lightweight language capabilities.
+# Raptor Mini (Preview) – Model Description
 
-Strengths:
-- Minimal resource usage and low inference cost
-- Useful for short completions and classification tasks
+**Formål:**
+Høy hastighet for små tekst- og kodeutkast.
 
-Recommended use cases:
-- Microservices, on-device inference, telemetry parsing.
+## Egenskaper
+- Svært rask.
+- Lav presisjon ved komplekse oppgaver.
+- Flink til korte drafts.
+
+## Typiske bruksområder
+- Hurtigskriving
+- Enkle kodeutkast
+- Tekstdrafting

@@ -1,10 +1,23 @@
-# Claude Sonnet 4.5
+---
+model_id: claude-sonnet-4.5
+title: Claude Sonnet 4.5 – Model Description
+version: 1.0.0
+owner: NORSAIN Engineering Governance
+status: Approved
+tags: [documentation, qms, analysis, longform]
+---
 
-Summary: Claude Sonnet 4.5 is tuned for structured poetic forms and higher-level literary prompts, delivering controlled creative outputs.
+# Claude Sonnet 4.5 – Model Description
 
-Strengths:
-- Handles constrained poetic forms well
-- Produces higher-quality structured creative content than general models
+**Formål:**
+Markedets beste modell for lange dokumenter og ISO/QMS-tekst.
 
-Recommended use cases:
-- Literary prompts, constrained-format generation, educational creative aids.
+## Egenskaper
+- Ekstremt høy presisjon i formelle tekster.
+- Sterk på analyse og struktur.
+- God konteksthåndtering ved lange dokumenter.
+
+## Typiske bruksområder
+- QMS-/IMS-dokumentasjon
+- Policies og prosedyrer
+- Rapporter og vurderinger

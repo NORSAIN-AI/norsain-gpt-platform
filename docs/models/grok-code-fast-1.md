@@ -1,10 +1,23 @@
-# grok-code-fast-1
+---
+model_id: grok-code-fast-1
+title: Grok Code Fast 1 – Model Description
+version: 1.0.0
+owner: NORSAIN Engineering Governance
+status: Approved
+tags: [fast, code, low-cost]
+---
 
-Summary: `grok-code-fast-1` is a specialist model focused on fast, cost-effective code understanding and small completion tasks.
+# Grok Code Fast 1 – Model Description
 
-Strengths:
-- Low latency for quick code lookups and small refactors
-- Optimized for developer tooling where responsiveness is critical
+**Formål:**
+Ekstremt rask modell optimalisert for kodegenerering.
 
-Recommended use cases:
-- IDE integrations, code search, lightweight code transformations.
+## Egenskaper
+- Markedets laveste latency.
+- God på kode i én fil eller små endringer.
+- Svakere på komplekse repoer.
+
+## Typiske bruksområder
+- Quick-fixes
+- Patch i én fil
+- Inline kodeassistanse

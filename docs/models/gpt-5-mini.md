@@ -1,10 +1,23 @@
-# GPT-5-Mini
+---
+model_id: gpt-5-mini
+title: GPT-5 Mini – Model Description
+version: 1.0.0
+owner: NORSAIN Engineering Governance
+status: Approved
+tags: [speed, low-cost, small-tasks]
+---
 
-Summary: GPT-5-Mini is a lightweight, lower-cost variant of the GPT-5 family intended for embeddings, quick completions, and scalable assistant endpoints with constrained budgets.
+# GPT-5 Mini – Model Description
 
-Strengths:
-- Lower latency and cost
-- Useful for high-volume conversational endpoints where extreme reasoning depth is not required
+**Formål:**
+Rimelig, rask og godt egnet til enkle utvikleroppgaver.
 
-Recommended use cases:
-- Chatbots, preliminary summarization, embedding-generation, and low-cost inference.
+## Egenskaper
+- 0x kost (gratisnivå).
+- Svært responsiv.
+- Beste mini-modellen for kode i GPT-serien.
+
+## Typiske bruksområder
+- Små kodeendringer
+- README, korte beskrivelser
+- Enkle UML-/API-skisser

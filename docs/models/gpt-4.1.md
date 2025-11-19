@@ -1,10 +1,23 @@
-# GPT-4.1
+---
+model_id: gpt-4.1
+title: GPT-4.1 – Model Description
+version: 1.0.0
+owner: NORSAIN Engineering Governance
+status: Approved
+tags: [predictable, stable, mid-tier]
+---
 
-Summary: GPT-4.1 is an incremental improvement over GPT-4 with enhancements to reasoning and instruction following.
+# GPT-4.1 – Model Description
 
-Strengths:
-- Improved instruction-following and summarization
-- Better consistency on multi-step tasks
+**Formål:**
+Stabil, forutsigbar modell for enkle utvikleroppgaver.
 
-Recommended use cases:
-- Document summarization, long-form Q&A, and structured data extraction.
+## Egenskaper
+- Ryddig og presis språkbruk.
+- Ikke optimal for store refaktoreringer.
+- Passer til lette tekniske beskrivelser.
+
+## Typiske bruksområder
+- Lettere dokumentasjon
+- Enkle kodeoppgaver
+- QA og korte analyser

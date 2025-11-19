@@ -1,14 +1,27 @@
-# GPT-5.1-Codex
+---
+model_id: gpt-5.1-codex
+title: GPT-5.1 Codex – Model Description
+version: 1.0.0
+status: Approved
+owner: NORSAIN Engineering Governance
+tags: [code, refactoring, analysis, backend-core]
+---
 
-Summary: GPT-5.1-Codex is a code-optimized variant of the GPT-5.1 family tuned for reliable, high-throughput code generation, completion, and program understanding tasks.
+# GPT-5.1 Codex – Model Description
 
-Strengths:
-- Precise code completions and refactorings
-- Good at multi-language generation (Python, JavaScript, Java, Go, etc.)
-- Helpful for automated code review and documentation generation
+**Formål:**
+Høy-presisjons kodemodell for komplekse systemer, store repoer og avansert refaktorering.
 
-Recommended use cases:
-- In-editor completions, CI-driven code generation, automated refactors, and code explanation tools.
+## Egenskaper
+- Beste kodeforståelse i 2025.
+- Forstår store codebases i TypeScript, Python, Java, Go.
+- Sterk på multistep-debugging og store endringer.
+- Høy presisjon på patch-generering.
+- Svært god ved MCP-, MAS- og backend-core-relatert arbeid.
 
-Notes:
-- Prioritize deterministic settings for reproducible code outputs. Evaluate safety checks for generated code before production use.
+## Typiske bruksområder
+- Tverrmodulær refaktorering
+- Kompleks buganalyse
+- MCP-serverkode
+- Backend core-tjenester
+- Repo-gap-analyser
