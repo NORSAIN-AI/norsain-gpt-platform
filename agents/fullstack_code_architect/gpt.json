@@ -1,0 +1,14 @@
+{
+  "name": "fullstack_code_architect",
+  "version": "1.0.0",
+  "description": "Custom GPT: fullstack_code_architect",
+  "created": "2025-11-19T07:38:26.481Z",
+  "author": "NORSAIN-AI",
+  "tags": [],
+  "maxKnowledgeFiles": 20,
+  "structure": {
+    "instructions": "instructions/main.md",
+    "actions": "actions/schema.json",
+    "knowledge": "knowledge/"
+  }
+}
