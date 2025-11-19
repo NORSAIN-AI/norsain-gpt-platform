@@ -1,4 +1,4 @@
-import { mkdir, cp, readFile, writeFile } from 'fs/promises';
+import { mkdir, cp, readFile, writeFile, stat } from 'fs/promises';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -25,7 +25,30 @@ export function getProjectRoot(): string {
  */
 export async function scaffoldGPT(options: ScaffoldOptions): Promise<string> {
   const projectRoot = getProjectRoot();
-  const templatePath = join(projectRoot, 'agents', '_template');
+  // Use templates in `agents/templates` (prefer `custom_gpt`) — legacy `agents/_template` removed
+  const templateCandidates = [
+    join(projectRoot, 'agents', 'templates', 'custom_gpt'),
+    join(projectRoot, 'agents', 'templates'),
+  ];
+
+  let templatePath: string | undefined;
+  for (const candidate of templateCandidates) {
+    try {
+      const s = await stat(candidate);
+      if (s.isDirectory()) {
+        templatePath = candidate;
+        break;
+      }
+    } catch {
+      // not present, try next
+    }
+  }
+
+  if (!templatePath) {
+    throw new Error(
+      `No template found. Checked: ${templateCandidates.join(', ')}. Add an agents/templates/custom_gpt or agents/templates directory.`
+    );
+  }
   const gptPath = join(projectRoot, 'agents', options.name);
 
   // Create the new GPT directory structure
@@ -42,7 +65,7 @@ export async function scaffoldGPT(options: ScaffoldOptions): Promise<string> {
     await cp(templatePath, gptPath, { recursive: true });
   } catch (error) {
     throw new Error(
-      `Failed to copy template: ${error instanceof Error ? error.message : String(error)}`
+      `Failed to copy template from ${templatePath}: ${error instanceof Error ? error.message : String(error)}`
     );
   }
 
