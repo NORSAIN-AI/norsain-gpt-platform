@@ -1,6 +1,7 @@
 * [Documentation Home](README.md)
 
 * Models
+  * [Model Index](models/_index.md)
   * [GPT-5.1 Codex](models/gpt-5.1-codex.md)
   * [GPT-5.1](models/gpt-5.1.md)
   * [GPT-5 Codex](models/gpt-5-codex.md)
@@ -15,7 +16,8 @@
   * [Gemini 2.5 Pro](models/gemini-2.5-pro.md)
 
 * Governance
-  * [Model Selection Strategy](governance/model-selection-strategy.md)
+  * [Model Selection Strategy](model-selection-strategy.md)
+  * [Model Governance Dashboard](governance/model-governance-dashboard.md)
 
 * Architecture
   * (legg til når filer finnes)

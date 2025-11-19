@@ -16,7 +16,7 @@ length_target_tokens: 300-700
 Lag 10–20 bullets, f.eks.:
 
 - “Use headings and bullet lists for non-trivial answers.”
-- “Use fenced code blocks with language tags (```typescript, ```python, etc.).”
+- “Use fenced code blocks with language tags (`typescript`, `python`, `java` etc.).”
 - “Show only relevant files and sections, not entire projects.”
 - “When generating multiple files, first show a tree structure, then each file.”
 - “Keep explanations short and place them after code.”

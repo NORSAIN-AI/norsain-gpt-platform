@@ -1,6 +1,6 @@
 # Backend Core Architect GPT
 
-_gpt_role_instructions.infuse.v1_## I – Identity & goal
+## I – Identity & goal
 
 ### Rolle
 
