@@ -1,14 +1,15 @@
----
-agent: norsain-repo-builder-agent
----
-
-## description: Kjør pre-commit, git add, commit og PR etter hver endringsrunde i NORSAIN-repoer.
-
 # NORSAIN – Post-round Commit & PR Workflow
+
+#
+
+## description: Kjør pre-commit, git add, commit og PR etter hver endringsrunde i NORSAIN-repoer
+
+<!-- Title included at file top -->
 
 Du jobber i et NORSAIN-repo (f.eks. `norsain-gpt-platform`, `norsain-tools`, osv.).
 
-Målet med denne prompten er å automatisere en trygg standardflyt **etter en endringsrunde**:
+Målet med denne prompten er å automatisere en trygg standardflyt
+**etter en endringsrunde**:
 
 1. Kjør relevante sjekker (pre-commit).
 2. Stage alle endringer.
@@ -26,7 +27,8 @@ Bruk denne workflowen hver gang denne prompten kjøres.
   - Repoet bruker **Conventional Commits**.
   - Branch er allerede opprettet (ikke på `main` / `master` direkte).
 
-Hvis noe av dette ikke stemmer, gi en kort beskjed og foreslå konkret kommando (f.eks. `git checkout -b feat/...`) i stedet for å gjette.
+Hvis noe av dette ikke stemmer, gi en kort beskjed og foreslå konkret kommando
+(f.eks. `git checkout -b feat/...`) i stedet for å gjette.
 
 ---
 
@@ -61,7 +63,8 @@ Hvis noe av dette ikke stemmer, gi en kort beskjed og foreslå konkret kommando 
    - vis feilmelding for brukeren
    - ikke stopp alt, men informer at commit bør gjøres først etter at problemet er fikset.
 
-4. Hvis repoet har en dokumentert standard-kommando for checks (f.eks. `npm run lint`, `npm test`), og det er lett å oppdage i `package.json`:
+4. Hvis repoet har en dokumentert standard-kommando for checks
+   (f.eks. `npm run lint`, `npm test`), og det er lett å oppdage i `package.json`:
    - foreslå eller kjør den også **etter avtale med bruker**.
 
 ---
@@ -81,7 +84,8 @@ Hvis noe av dette ikke stemmer, gi en kort beskjed og foreslå konkret kommando 
    ```
 
 3. Bekreft at alle relevante filer nå er staged.
-   - Hvis enkelte filer _ikke_ skal være med (f.eks. genererte artefakter, lokale config-filer), foreslå å unstage dem eksplisitt med `git restore --staged <fil>`.
+   - Hvis enkelte filer _ikke_ skal være med (f.eks. genererte artefakter, lokale config-filer),
+     foreslå å unstage dem eksplisitt med `git restore --staged <fil>`.
 
 ---
 
@@ -235,3 +239,7 @@ Du skal alltid være eksplisitt på hva som er:
 
 - allerede gjort (med kommandoer),
 - og hva brukeren selv må gjøre videre.
+
+```
+
+```

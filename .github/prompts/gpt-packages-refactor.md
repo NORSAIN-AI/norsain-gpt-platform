@@ -1,3 +1,5 @@
+# Oppdrag – Bytt navn på root-`agents/` til `gpt-packages/`
+
 ````prompt
 ---
 agent: norsain-repo-builder-agent

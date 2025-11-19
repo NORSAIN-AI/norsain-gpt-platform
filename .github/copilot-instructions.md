@@ -1,4 +1,10 @@
-Kort sagt: nei, du _må_ ikke ha den detaljerte filstrukturen der. Den var kun for å “fryse” én veldig spesifikk mal. Hvis du vil ha mer fleksibilitet i hvilke enkeltfiler som finnes, bør vi heller beskrive **konsepter og mapper**, ikke hele treet.
+# Copilot Workspace Instructions for NORSAIN GPT Platform
+
+````text
+
+Kort sagt: nei, du _må_ ikke ha den detaljerte filstrukturen der. Den var kun for å “fryse” en veldig
+spesifikk mal. Hvis du vil ha mer fleksibilitet i hvilke enkeltfiler som finnes, bør vi heller beskrive
+**konsepter og mapper**, ikke hele treet.
 
 Jeg har derfor tatt ut hele den lange `custom_gpt_template`-lista og erstattet den med en mer generell kjerne-struktur. Resten av dokumentet er beholdt så langt som mulig.
 
@@ -6,7 +12,7 @@ Under er en **oppdatert versjon** av `copilot-instructions.md` der kun §2 er ry
 
 ---
 
-````markdown
+```md
 # Copilot Workspace Instructions for NORSAIN GPT Platform
 
 Dette dokumentet definerer hvordan GitHub Copilot skal arbeide i `norsain-gpt-platform`. Instruksjonene gjelder for hele kodebasen og styrer hvordan Copilot genererer, endrer og verifiserer filer.
@@ -50,8 +56,11 @@ scripts/
   update-*.mts
   generate-*.mts
   utils/
-```
 ````
+
+````text
+
+```text
 
 Regler for disse områdene:
 
@@ -87,7 +96,7 @@ Alle filer i `gpt-packages/<gpt>/knowledge/` skal ha navnet:
 
 ```text
 NN.NN_snake_case.md
-```
+````
 
 Der:
 
