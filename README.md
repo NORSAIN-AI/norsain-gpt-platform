@@ -22,8 +22,7 @@ NORSAIN GPT Platform gjør det enkelt å:
 - Validere at en GPT-pakke følger NGAS-konvensjonene (struktur, metadata, maks antall knowledge-filer)
 - Generere kunnskapsindekser og hjelpe-artefakter
 
-Innholdsfortegnelse
--------------------
+## Innholdsfortegnelse
 
 - [Kort oversikt](#kort-oversikt)
 - [Innhold i repoet](#innhold-i-repoet)
@@ -36,8 +35,7 @@ Innholdsfortegnelse
 - [Bidra](#bidra)
 
 
-Innhold i repoet
------------------
+## Innhold i repoet
 
 Hovedstruktur (forkortet):
 
@@ -49,14 +47,12 @@ norsain-gpt-platform/
 └── web/                    # framtidig frontend (Next.js)
 ```
 
-Forutsetninger
---------------
+## Forutsetninger
 
 - Node.js >= 18
 - npm (eksempler bruker `npm`) eller en kompatibel pakkehåndterer
 
-Rask installasjon
-------------------
+## Rask installasjon
 
 ```bash
 git clone https://github.com/NORSAIN-AI/norsain-gpt-platform.git
@@ -64,8 +60,7 @@ cd norsain-gpt-platform
 npm install
 ```
 
-Hurtigstart
------------
+## Hurtigstart
 
 Scaffold, valider og generer index for en GPT-pakke:
 
@@ -83,8 +78,7 @@ npm run validate my-assistant
 npm run generate-index my-assistant
 ```
 
-CLI-kommandoer (oversikt)
--------------------------
+## CLI-kommandoer (oversikt)
 
 - `npm run scaffold <slug>` — Scaffold en ny GPT fra `gpt-packages/templates/custom_gpt`
 - `npm run validate [slug]` — Valider struktur, metadata og antall knowledge-filer
@@ -94,8 +88,7 @@ CLI-kommandoer (oversikt)
 - `npm run test` — Kjør testene (Vitest)
 - `npm run preflight` — Lint + typecheck + test (bruk før PR)
 
-Kvalitetsregler (NGAS)
-----------------------
+## Kvalitetsregler (NGAS)
 
 Kortversjon av viktige konvensjoner enforced av repoet:
 
@@ -105,15 +98,13 @@ Kortversjon av viktige konvensjoner enforced av repoet:
 - Instruksjonsfiler følger NGAS 01–09 (identity → end rules)
 - Actions skal bruke OpenAPI 3.1 format
 
-CI / Validering
----------------
+## CI / Validering
 
 - `validate-gpts.yml` kjører validering på push/PR
 - `auto-pr.yml` brukes for automatiserte PRs
 - Kjør `npm run preflight` lokalt for å etterligne CI
 
-Utvikling og testing
----------------------
+## Utvikling og testing
 
 Tips for bidragsytere:
 
@@ -130,8 +121,7 @@ git commit -m "feat: short description"
 git push -u origin HEAD
 ```
 
-Bidra
------
+## Bidra
 
 Vi ønsker bidrag. Følg disse reglene for en rask review:
 
@@ -139,25 +129,21 @@ Vi ønsker bidrag. Følg disse reglene for en rask review:
 - Kjør `npm run preflight` før du oppretter en PR
 - Hold PR-er små og fokuserte
 
-Sikkerhet og ansvar
--------------------
+## Sikkerhet og ansvar
 
 - Ikke legg inn hemmeligheter i repoet eller i PR-er
 - For sikkerhetsrelaterte problemer, åpne en privat issue og merk som `security`
 
-Lisens
-------
+## Lisens
 
 MIT — se `LICENSE`.
 
-Kontakt og support
--------------------
+## Kontakt og support
 
 - Åpne en issue for spørsmål eller feil
 - For større roadmap- eller arkitekturspørsmål, kontakt repo-eierne via organisasjonens kanaler
 
-Takk
------
+## Takk
 
 Takk for at du bidrar! Dette repoet er ment som et robust verktøysett for å bygge og drifte Custom GPT-er i produksjon.
 
