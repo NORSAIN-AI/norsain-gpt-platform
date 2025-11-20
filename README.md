@@ -88,6 +88,15 @@ npm run generate-index my-assistant
 - `npm run test` — Kjør testene (Vitest)
 - `npm run preflight` — Lint + typecheck + test (bruk før PR)
 
+## Dev-setup
+
+Følg disse trinn for lokal utvikling og testing:
+
+- Installer Node.js v18+ (bruk `nvm` eller tilsvarende for versjonshåndtering)
+- Kjør `npm install` for å installere avhengigheter
+- Kjør `npm run preflight` for lint, typecheck og tester før PR
+- Kjør `npm run test` for enhetstester og `npm run lint` for statisk sjekk
+
 ## Kvalitetsregler (NGAS)
 
 Kortversjon av viktige konvensjoner enforced av repoet:
