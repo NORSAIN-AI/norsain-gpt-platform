@@ -5,6 +5,7 @@ Plattform for å scaffolde, validere og vedlikeholde Custom GPT-er med et TypeSc
 <!-- Badges -->
 
 [![CI](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/ci.yml)
+[![Tests](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/test-vitest.yml/badge.svg)](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/test-vitest.yml)
 [![Auto PR](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/auto-pr.yml/badge.svg)](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/auto-pr.yml)
 [![License: MIT](https://img.shields.io/github/license/NORSAIN-AI/norsain-gpt-platform)](LICENSE)
 [![Node >=18](https://img.shields.io/badge/node-%3E=18.0.0-339933?logo=node.js)](package.json)
