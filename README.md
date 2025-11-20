@@ -1,10 +1,11 @@
 # NORSAIN GPT Platform
 
-Plattform for å utvikle og drifte Custom GPT-er med TypeScript-baserte verktøy for scaffolding, validering og indeksgenerering.
+Plattform for å scaffolde, validere og vedlikeholde Custom GPT-er med et TypeScript-basert verktøysett.
 
 <!-- Badges -->
 
-[![CI – Validate GPTs](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/validate-gpts.yml/badge.svg)](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/validate-gpts.yml)
+[![CI](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/ci.yml)
+[![Tests](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/test-vitest.yml/badge.svg)](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/test-vitest.yml)
 [![Auto PR](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/auto-pr.yml/badge.svg)](https://github.com/NORSAIN-AI/norsain-gpt-platform/actions/workflows/auto-pr.yml)
 [![License: MIT](https://img.shields.io/github/license/NORSAIN-AI/norsain-gpt-platform)](LICENSE)
 [![Node >=18](https://img.shields.io/badge/node-%3E=18.0.0-339933?logo=node.js)](package.json)
@@ -13,38 +14,45 @@ Plattform for å utvikle og drifte Custom GPT-er med TypeScript-baserte verktøy
 [![ESLint](https://img.shields.io/badge/lint-ESLint-4B32C3?logo=eslint)](https://eslint.org/)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#bidra)
 
-## Oversikt
+## Kort oversikt
 
-Strukturert plattform for å bygge og vedlikeholde Custom GPT-er med:
+NORSAIN GPT Platform gjør det enkelt å:
 
-## Arkitektur og mappestruktur
+- Scaffolde nye GPT-pakker fra en standard mal
+- Validere at en GPT-pakke følger NGAS-konvensjonene (struktur, metadata, maks antall knowledge-filer)
+- Generere kunnskapsindekser og hjelpe-artefakter
+
+## Innholdsfortegnelse
+
+- [Kort oversikt](#kort-oversikt)
+- [Innhold i repoet](#innhold-i-repoet)
+- [Forutsetninger](#forutsetninger)
+- [Rask installasjon](#rask-installasjon)
+- [Hurtigstart](#hurtigstart)
+- [CLI-kommandoer](#cli-kommandoer-oversikt)
+- [Dev-setup](#dev-setup)
+- [CI / Validering](#ci--validering)
+- [Bidra](#bidra)
+
+
+## Innhold i repoet
+
+Hovedstruktur (forkortet):
 
 ```text
 norsain-gpt-platform/
-├── gpt-packages/           # GPT-pakker (template + instanser)
-│   ├── _template/          # Basemal for nye GPT-er
-│   │   ├── instructions/   # System-/rolle-instruksjon
-│   │   ├── actions/        # OpenAPI 3.1-skjemaer
-│   │   ├── knowledge/      # Kunnskapsfiler (≤ 20)
-│   │   └── gpt.json        # Meta og struktur
-│   └── <gpt-navn>/         # Konkrete GPT-installasjoner
-├── scripts/                # TypeScript-CLI (ESM .mts)
-│   ├── scaffold-gpt.mts    # Scaffold ny GPT fra template
-│   ├── validate-gpt.mts    # Valider GPT-struktur og teller
-│   ├── generate-index.mts  # Generer knowledge/index.md
-│   └── utils/              # Delte utilmoduler
-├── .github/                # GitHub-konfig, prompts og workflows
-│   ├── prompts/            # Commit/PR/branch-prompter
-│   └── workflows/          # CI/CD (validate-gpts, auto-pr)
-└── web/                    # Fremtidig Next.js/Vercel-app
+├── gpt-packages/           # GPT-pakker (templates + instanser)
+├── scripts/                # CLI-skript (.mts, ESM)
+├── .github/                # workflows, prompts, agent-definisjoner
+└── web/                    # framtidig frontend (Next.js)
 ```
 
 ## Forutsetninger
 
-- Node.js `>=18.0.0`
-- npm (eller pnpm/yarn – eksempelene bruker npm)
+- Node.js >= 18
+- npm (eksempler bruker `npm`) eller en kompatibel pakkehåndterer
 
-## Installering
+## Rask installasjon
 
 ```bash
 git clone https://github.com/NORSAIN-AI/norsain-gpt-platform.git
@@ -54,95 +62,97 @@ npm install
 
 ## Hurtigstart
 
-Opprett en ny GPT fra mal og generer indeks:
+Scaffold, valider og generer index for en GPT-pakke:
 
 ```bash
-# Scaffold ny GPT
+# Opprett en GPT fra malen
 npm run scaffold my-assistant \
   --description "En hjelpsom assistent" \
   --author "Ditt Navn" \
   --tags "helper,assistant,productivity"
 
-# Valider GPT-struktur
+# Valider en GPT (eller uten navn for alle)
 npm run validate my-assistant
 
-# Generer knowledge/index.md
+# Generer knowledge/index.md for en GPT
 npm run generate-index my-assistant
 ```
 
-## CLI-skript
+## CLI-kommandoer (oversikt)
 
-- `npm run scaffold <navn>`: Oppretter ny GPT fra `gpt-packages/templates/custom_gpt`
-- `npm run validate [navn]`: Validerer en spesifikk eller alle GPT-er
-- `npm run generate-index [navn]`: Lager `knowledge/index.md`
-- `npm run lint`: ESLint-kjøring for `.ts/.mts`
-- `npm run format`: Kodeformattering med Prettier
-- `npm run typecheck`: TypeScript typekontroll
-- `npm run preflight`: Lint + typecheck + validate i ett steg
+- `npm run scaffold <slug>` — Scaffold en ny GPT fra `gpt-packages/templates/custom_gpt`
+- `npm run validate [slug]` — Valider struktur, metadata og antall knowledge-filer
+- `npm run generate-index [slug]` — Lag/oppdater `knowledge/index.md`
+- `npm run lint` — ESLint for `.ts`/`.mts`
+- `npm run typecheck` — `tsc --noEmit`
+- `npm run test` — Kjør testene (Vitest)
+- `npm run preflight` — Lint + typecheck + test (bruk før PR)
+
+## Dev-setup
+
+Følg disse trinn for lokal utvikling og testing:
+
+- Installer Node.js v18+ (bruk `nvm` eller tilsvarende for versjonshåndtering)
+- Kjør `npm install` for å installere avhengigheter
+- Kjør `npm run preflight` for lint, typecheck og tester før PR
+- Kjør `npm run test` for enhetstester og `npm run lint` for statisk sjekk
 
 ## Kvalitetsregler (NGAS)
 
-- Streng struktur i `gpt-packages/` og `scripts/` – ikke fravik uten eksplisitt behov
-- Kunnskapsfiler i `gpt-packages/<gpt>/knowledge/`:
-  - Maks 20 filer pr. GPT
-  - Filnavn: `NN.NN_snake_case.md`
-  - YAML-frontmatter er påkrevd
-- Actions skal være gyldig OpenAPI 3.1 med tydelige `schemas`
-- Bruk eksisterende script-kommandoer ved utvikling og validering
+Kortversjon av viktige konvensjoner enforced av repoet:
 
-## CI/CD-workflows
+- `gpt-packages/<slug>/` skal inneholde: `gpt.json`, `gpt_metadata/`, `instructions/`, `knowledge/`, `actions/`
+- Maks 20 knowledge-filer per GPT
+- Knowledge-filer skal ha navn som `NN.NN_snake_case.md` og obligatorisk YAML-frontmatter
+- Instruksjonsfiler følger NGAS 01–09 (identity → end rules)
+- Actions skal bruke OpenAPI 3.1 format
 
-- `validate-gpts.yml`: Kjører GPT-validering (struktur og filantall) ved push/PR
-- `auto-pr.yml`: Automatiserer PR-oppgaver (der relevant)
+## CI / Validering
 
-Statusbadger vises øverst i README og lenker til workflow-kjøringer.
+- `validate-gpts.yml` kjører validering på push/PR
+- `auto-pr.yml` brukes for automatiserte PRs
+- Kjør `npm run preflight` lokalt for å etterligne CI
 
-## Vanlige oppgaver
+## Utvikling og testing
 
-Opprette ny GPT:
-
-```bash
-npm run scaffold sales-assistant --description "Selgerstøtte" --tags "sales,b2b"
-```
-
-Validere alt innhold:
+Tips for bidragsytere:
 
 ```bash
-npm run validate
-```
+# Lag en feature branch
+git checkout -b feat/<kort-scope>-<kort-beskrivelse>
 
-Generere index for alle GPT-er:
-
-```bash
-npm run generate-index
-```
-
-Preflight før PR:
-
-```bash
+# Kjør preflight lokalt og fiks problemer
 npm run preflight
+
+# Stage og commit (Conventional Commits)
+git add -A
+git commit -m "feat: short description"
+git push -u origin HEAD
 ```
 
 ## Bidra
 
-1. Opprett branch: `feat/<kort-scope>-<kort-beskrivelse>` (små bokstaver, kebab-case)
-2. Gjør endringer i tråd med NGAS og scripts
-3. Kjør `npm run preflight` og fix evt. feil
-4. Push branch og opprett PR
+Vi ønsker bidrag. Følg disse reglene for en rask review:
 
-Eksempel:
+- Bruk Conventional Commits (`feat`, `fix`, `docs`, `chore`, `test`, osv.)
+- Kjør `npm run preflight` før du oppretter en PR
+- Hold PR-er små og fokuserte
 
-```bash
-git checkout -b feat/docs-readme-badges
-git add -A
-git commit -m "docs: oppdater README med badges og struktur"
-git push -u origin feat/docs-readme-badges
-```
+## Sikkerhet og ansvar
+
+- Ikke legg inn hemmeligheter i repoet eller i PR-er
+- For sikkerhetsrelaterte problemer, åpne en privat issue og merk som `security`
 
 ## Lisens
 
-MIT – se [`LICENSE`](LICENSE).
+MIT — se `LICENSE`.
 
-## Support
+## Kontakt og support
 
-Åpne en issue i repoet ved spørsmål eller feil.
+- Åpne en issue for spørsmål eller feil
+- For større roadmap- eller arkitekturspørsmål, kontakt repo-eierne via organisasjonens kanaler
+
+## Takk
+
+Takk for at du bidrar! Dette repoet er ment som et robust verktøysett for å bygge og drifte Custom GPT-er i produksjon.
+
