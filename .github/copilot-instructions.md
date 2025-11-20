@@ -1,5 +1,20 @@
 # Copilot Workspace Instructions for NORSAIN GPT Platform
 
+````text
+
+Kort sagt: nei, du _må_ ikke ha den detaljerte filstrukturen der. Den var kun for å “fryse” en veldig
+spesifikk mal. Hvis du vil ha mer fleksibilitet i hvilke enkeltfiler som finnes, bør vi heller beskrive
+**konsepter og mapper**, ikke hele treet.
+
+Jeg har derfor tatt ut hele den lange `custom_gpt_template`-lista og erstattet den med en mer generell kjerne-struktur. Resten av dokumentet er beholdt så langt som mulig.
+
+Under er en **oppdatert versjon** av `copilot-instructions.md` der kun §2 er ryddet opp, og resten er justert minimalt for å være konsistent.
+
+---
+
+```md
+# Copilot Workspace Instructions for NORSAIN GPT Platform
+
 Dette dokumentet definerer hvordan GitHub Copilot skal arbeide i `norsain-gpt-platform`.
 Det er en **global arbeidsinstruks** for Copilot i dette repoet, og styrer hvordan Copilot
 leser, foreslår og endrer filer.
@@ -16,12 +31,32 @@ Målet er å:
 
 Copilot skal i dette repoet primært hjelpe med:
 
-- TypeScript / ESM-kode i `scripts/**`
-- GPT-pakkestruktur i `gpt-packages/**`
-- dokumentasjon i `docs/**` og `reports/**`
-- agenter, prompts og workflows under `.github/**`
+```text
+gpt-packages/
+  _template/            # base-mal for nye GPT-pakker (navn kan variere)
+    instructions/
+    knowledge/
+    actions/
+    gpt.json
+  <gpt_name>/           # konkrete GPT-pakker
+    instructions/
+    knowledge/
+    actions/
+    gpt.json
 
-Copilot skal **ikke**:
+scripts/
+  scaffold-gpt.mts
+  validate-*.mts
+  update-*.mts
+  generate-*.mts
+  utils/
+````
+
+````text
+
+```text
+
+Regler for disse områdene:
 
 - introdusere nye toppnivåmapper eller fundamentalt endre arkitekturen
 - skrive inn secrets, tokens eller nøkler noen steder
@@ -77,24 +112,8 @@ Copilot skal alltid forholde seg til **faktisk struktur** i `REPO_STRUCTURE.md` 
 En **prod-GPT-pakke** under `gpt-packages/<slug>/` skal som hovedregel ha:
 
 ```text
-gpt-packages/<slug>/
-  gpt.json
-  gpt_metadata/
-  actions/
-  instructions/
-    01_identity.md
-    02_purpose.md
-    03_core_behaviour.md
-    04_constraints.md
-    05_safety.md
-    06_output_rules.md
-    07_interaction_rules.md
-    08_ask_vs_infer.md
-    09_end_rules.md
-  knowledge/
-    00.01_knowledge_index.md
-    (øvrige knowledge-filer, maks totalt 20)
-```
+NN.NN_snake_case.md
+````
 
 Copilot skal:
 
