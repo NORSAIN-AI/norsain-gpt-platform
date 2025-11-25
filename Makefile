@@ -44,7 +44,7 @@ generate-index:
 	npm run generate-index
 
 gen-repo-structure:
-	node scripts/generate-repo-structure.mjs
+	npm run generate-repo-structure
 
 docs-serve:
 	@echo "If using docsify, open docs/index.html in browser or run a simple static server:"
