@@ -17,7 +17,8 @@ Oppgavene er organisert etter branch-planen fra refactor/feat/refs.
 
 ## feat/templates-library-v1: Implementer `_library/`
 
-- [ ] Opprett `gpt-packages/templates/_library/` med undermapper `instructions/`, `knowledge/`, `evals/`, `logs/`, `prompts/`.
+- [ ] Opprett `gpt-packages/templates/_library/` med undermapper
+      `instructions/`, `knowledge/`, `evals/`, `logs/`, `prompts/`.
 - [ ] Legg inn disse initialfilene (eller kopier fra repo hvis eksisterer):
   - `_library/knowledge/ngas_output_standards_v1.2.template.md`
   - `_library/knowledge/norsain_language_tone_guide.template.md`
@@ -68,7 +69,8 @@ Oppgavene er organisert etter branch-planen fra refactor/feat/refs.
 ## housekeeping
 
 - [ ] Fjern eller arkiver ubrukte test-mapper fra rot (`test_gpt/`-relaterte midlertidigheter) etter godkjenning.
-- [ ] Legg til checklist i PR-mal for endringer i `gpt-packages/templates/` (f.eks. `validate manifest`, `update README`).
+- [ ] Legg til checklist i PR-mal for endringer i `gpt-packages/templates/`
+      (f.eks. `validate manifest`, `update README`).
 
 ---
 

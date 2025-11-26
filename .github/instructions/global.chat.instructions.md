@@ -84,10 +84,12 @@ Når du lager eller endrer scripts i `scripts/**`:
 
 - Språk: **TypeScript (ESM)**
 - Bruk moderne imports:
+
   ```ts
   import fs from 'node:fs/promises';
   import path from 'node:path';
   ```
+
 - Scripts skal være:
   - små og fokusert på én oppgave
   - modulære

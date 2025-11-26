@@ -7,7 +7,7 @@ status: Approved
 tags: [documentation, qms, analysis, longform]
 ---
 
-# Claude Sonnet 4.5 – Model Description
+## Claude Sonnet 4.5 – Model Description
 
 **Formål:**
 Markedets beste modell for lange dokumenter og ISO/QMS-tekst.

@@ -7,7 +7,7 @@ status: Approved
 tags: [code, refactoring]
 ---
 
-# GPT-5 Codex – Model Description
+## GPT-5 Codex – Model Description
 
 **Formål:**
 Robust kodemodell når man ikke trenger full 5.1-presisjon.

@@ -64,7 +64,7 @@ gpt-packages/
    - Hvis de er tomme eller meningsløse:
      - Fjern dem (git rm) eller marker dem som deprecated i en README og rydd de faktiske filene.
 
-### 2. Bygg `instructions.template.md` riktig
+## 2. Bygg `instructions.template.md` riktig
 
 Under `gpt-packages/templates/custom_gpt/instructions/` skal du:
 

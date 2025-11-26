@@ -104,6 +104,5 @@ Next steps (suggested)
   (e.g., full content listing for `backend_core_architect/`).
 - If you want, I can also commit and push this file to a branch and open a PR — tell me if you want me to do that.
 
-
 ---
 Generated: 2025-11-19

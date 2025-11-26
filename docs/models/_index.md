@@ -9,7 +9,7 @@ tags:
   - index
 ---
 
-# Model Index
+## Model Index
 
 Oversikt over alle modellbeskrivelser i NORSAIN.
 

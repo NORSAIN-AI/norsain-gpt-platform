@@ -1,7 +1,5 @@
 # NORSAIN – Post-round Commit & PR Workflow
 
-#
-
 ## description: Kjør pre-commit, git add, commit og PR etter hver endringsrunde i NORSAIN-repoer
 
 <!-- Title included at file top -->
@@ -240,6 +238,6 @@ Du skal alltid være eksplisitt på hva som er:
 - allerede gjort (med kommandoer),
 - og hva brukeren selv må gjøre videre.
 
-```
+```text
 
 ```

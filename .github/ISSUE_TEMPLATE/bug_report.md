@@ -6,7 +6,7 @@ labels: ['bug']
 assignees: []
 ---
 
-# Bug Report
+## Bug Report
 
 ## 1. Sammendrag
 

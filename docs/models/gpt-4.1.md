@@ -7,7 +7,7 @@ status: Approved
 tags: [predictable, stable, mid-tier]
 ---
 
-# GPT-4.1 – Model Description
+## GPT-4.1 – Model Description
 
 **Formål:**
 Stabil, forutsigbar modell for enkle utvikleroppgaver.

@@ -14,14 +14,15 @@ tags:
   - cost-control
 ---
 
-# Model Selection Strategy (v2.0)
+## Model Selection Strategy (v2.0)
 
 Denne strategien definerer valg av AI-modeller brukt i NORSAIN-prosjekter.
-Målet er balansert bruk av kvalitet, kost og ytelse – spesielt i Copilot-agenter og GPT-integrasjoner på tvers av Backend Core, MAS, MCP, QMS/IMS, og engineering workflows.
+Målet er balansert bruk av kvalitet, kost og ytelse – spesielt i Copilot-agenter og GPT-integrasjoner
+på tvers av Backend Core, MAS, MCP, QMS/IMS, og engineering workflows.
 
 ---
 
-# 1. Prinsipper for modellvalg
+## 1. Prinsipper for modellvalg
 
 1. Bruk _laveste modell som gir akseptabel kvalitet_.
 2. Velg **Codex** for kode der tilgjengelig.
@@ -32,7 +33,7 @@ Målet er balansert bruk av kvalitet, kost og ytelse – spesielt i Copilot-agen
 
 ---
 
-# 2. Modelloversikt (alle aktuelle modeller)
+## 2. Modelloversikt (alle aktuelle modeller)
 
 | Modell                | Styrker                        | Svakheter                 | Typiske bruksområder                                 |
 | --------------------- | ------------------------------ | ------------------------- | ---------------------------------------------------- |
@@ -51,7 +52,7 @@ Målet er balansert bruk av kvalitet, kost og ytelse – spesielt i Copilot-agen
 
 ---
 
-# 3. Beslutningsmatrise per oppgavetype
+## 3. Beslutningsmatrise per oppgavetype
 
 ## 3.1 Kode
 
@@ -108,7 +109,7 @@ Målet er balansert bruk av kvalitet, kost og ytelse – spesielt i Copilot-agen
 
 ---
 
-# 4. Agentstandarder (default modeller)
+## 4. Agentstandarder (default modeller)
 
 | Agent                            | Standardmodell    |
 | -------------------------------- | ----------------- |
@@ -124,7 +125,7 @@ Målet er balansert bruk av kvalitet, kost og ytelse – spesielt i Copilot-agen
 
 ---
 
-# 5. Forenklet beslutningsregel
+## 5. Forenklet beslutningsregel
 
 1. Start med **laveste fornuftige modell** (Mini/Haiku/Grok).
 2. Hvis kvalitet faller → **GPT-5 Codex** eller **GPT-4o**.
@@ -133,6 +134,6 @@ Målet er balansert bruk av kvalitet, kost og ytelse – spesielt i Copilot-agen
 
 ---
 
-# 6. Revisjon
+## 6. Revisjon
 
 - Dokumentet oppdateres **kvartalsvis** eller ved større modellendringer i VS Code.

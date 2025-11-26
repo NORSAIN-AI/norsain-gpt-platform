@@ -107,7 +107,7 @@ Copilot skal alltid forholde seg til **faktisk struktur** i `REPO_STRUCTURE.md` 
 
 ## 4. GPT-pakker under `gpt-packages/`
 
-### 4.1 Prod-pakker
+## 4.1 Prod-pakker
 
 En **prod-GPT-pakke** under `gpt-packages/<slug>/` skal som hovedregel ha:
 
@@ -120,7 +120,7 @@ Copilot skal:
 - foreslå strukturer som speiler **`templates/custom_gpt`** og NGAS 01–09
 - ikke fjerne disse mappene/filene uten svært tydelig instruks.
 
-### 4.2 Sandbox-pakker
+## 4.2 Sandbox-pakker
 
 - **Sandbox/test-GPT-er** skal ligge under:
   `gpt-packages/.sandbox/<slug>/`

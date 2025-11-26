@@ -34,7 +34,6 @@ NORSAIN GPT Platform gjør det enkelt å:
 - [CI / Validering](#ci--validering)
 - [Bidra](#bidra)
 
-
 ## Innhold i repoet
 
 Hovedstruktur (forkortet):
@@ -155,4 +154,3 @@ MIT — se `LICENSE`.
 ## Takk
 
 Takk for at du bidrar! Dette repoet er ment som et robust verktøysett for å bygge og drifte Custom GPT-er i produksjon.
-

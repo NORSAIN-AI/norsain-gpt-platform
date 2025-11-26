@@ -7,7 +7,7 @@ status: Approved
 tags: [speed, low-cost, small-tasks]
 ---
 
-# GPT-5 Mini – Model Description
+## GPT-5 Mini – Model Description
 
 **Formål:**
 Rimelig, rask og godt egnet til enkle utvikleroppgaver.

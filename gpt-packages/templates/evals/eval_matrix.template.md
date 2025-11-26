@@ -4,7 +4,7 @@ title: Template – GPT Evaluation Matrix (1–5)
 version: 1.0
 ---
 
-# <GPT_NAME> – Evaluation Matrix
+## <GPT_NAME> – Evaluation Matrix
 
 Bruk denne matrisen til å evaluere en bestemt Custom GPT-versjon mot et sett testprompter.
 

@@ -7,7 +7,7 @@ status: Approved
 tags: [large-context, analysis, architecture, multimodal]
 ---
 
-# Gemini 2.5 Pro – Model Description
+## Gemini 2.5 Pro – Model Description
 
 **Formål:**
 Kraftig modell for stor kontekst, analyse og tekniske vurderinger.

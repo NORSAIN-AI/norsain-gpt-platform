@@ -2,9 +2,12 @@
 
 ## 1. Repository Overview
 
-- **Purpose**: The repository is a TypeScript-based framework for developing and managing custom GPTs. It includes scaffolding tools, validation scripts, and knowledge files for GPT agents.
+- **Purpose**: The repository is a TypeScript-based framework for developing and managing custom GPTs.
+  It includes scaffolding tools, validation scripts, and knowledge files for GPT agents.
 
-- **Summary**: The repo is well-structured, adhering to NGAS architecture in core areas. Flexible areas like `web/` and `docs/` allow for future expansion. Some gaps exist in documentation and validation coverage.
+- **Summary**: The repo is well-structured, adhering to NGAS architecture in core areas.
+  Flexible areas like `web/` and `docs/` allow for future expansion.
+  Some gaps exist in documentation and validation coverage.
 
 ## 2. File & Folder Structure
 

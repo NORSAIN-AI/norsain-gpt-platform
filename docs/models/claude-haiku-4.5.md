@@ -7,7 +7,7 @@ status: Approved
 tags: [fast, text, low-cost]
 ---
 
-# Claude Haiku 4.5 – Model Description
+## Claude Haiku 4.5 – Model Description
 
 **Formål:**
 Rask, rimelig og svært sterk tekstkvalitet i mini-klassen.

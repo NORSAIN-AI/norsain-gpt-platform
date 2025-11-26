@@ -7,7 +7,7 @@ status: Approved
 tags: [speed, drafts, low-cost]
 ---
 
-# Raptor Mini (Preview) – Model Description
+## Raptor Mini (Preview) – Model Description
 
 **Formål:**
 Høy hastighet for små tekst- og kodeutkast.

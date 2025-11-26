@@ -7,7 +7,7 @@ owner: NORSAIN Engineering Governance
 tags: [code, refactoring, analysis, backend-core]
 ---
 
-# GPT-5.1 Codex – Model Description
+## GPT-5.1 Codex – Model Description
 
 **Formål:**
 Høy-presisjons kodemodell for komplekse systemer, store repoer og avansert refaktorering.

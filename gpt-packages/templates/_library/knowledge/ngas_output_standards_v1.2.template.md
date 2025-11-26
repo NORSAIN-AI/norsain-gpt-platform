@@ -10,7 +10,7 @@ next_review: 2026-05-20
 tags: [ngas, output, standards]
 ---
 
-# NGAS Output Standards v1.2
+## NGAS Output Standards v1.2
 
 Kort oversikt over krav og anbefalinger for agentens output-format.
 

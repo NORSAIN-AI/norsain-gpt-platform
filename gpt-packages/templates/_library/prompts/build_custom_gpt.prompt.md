@@ -1,5 +1,7 @@
 <!-- Prompt: build_custom_gpt -->
 
+# Build Custom GPT Prompt
+
 Use this prompt in a builder agent or manual flow to scaffold a new GPT package
 from the `custom_gpt` template. The scaffolder will replace placeholders and
 apply library includes as defined in `template.manifest.json`.

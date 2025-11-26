@@ -7,7 +7,7 @@ owner: NORSAIN Engineering Governance
 tags: [architecture, analysis, reasoning, qms]
 ---
 
-# GPT-5.1 – Model Description
+## GPT-5.1 – Model Description
 
 **Formål:**
 Beste allround-modellen for arkitektur, resonnement og systemanalyse.

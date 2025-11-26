@@ -51,8 +51,8 @@ Each Custom GPT follows this structure:
 
 Validate your GPT structure (errors vs warnings):
 
-- Errors (block commit/workflow): missing required directories (`instructions`, `actions`, `knowledge`), missing `gpt.json`,
-  or `knowledge/` containing more than 20 files.
+- Errors (block commit/workflow): missing required directories (`instructions`, `actions`, `knowledge`),
+  missing `gpt.json`, or `knowledge/` containing more than 20 files.
 - Warnings (informational): missing `instructions/main.md`, missing `actions/schema.json`, or empty `knowledge/`.
 
 Run validator:

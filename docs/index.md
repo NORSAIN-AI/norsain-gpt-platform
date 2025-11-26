@@ -1,6 +1,7 @@
 # NORSAIN GPT Platform – Dokumentasjon
 
-Denne dokumentasjonen samler retningslinjer, modeller og arbeidsflyt for hvordan NORSAIN bruker og forvalter språkmodeller i `norsain-gpt-platform`.
+Denne dokumentasjonen samler retningslinjer, modeller og arbeidsflyt for hvordan NORSAIN
+bruker og forvalter språkmodeller i `norsain-gpt-platform`.
 
 Hovedområder:
 

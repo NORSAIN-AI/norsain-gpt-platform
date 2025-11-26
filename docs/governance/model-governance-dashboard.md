@@ -13,9 +13,10 @@ tags:
   - compliance
 ---
 
-# Model Governance Dashboard
+## Model Governance Dashboard
 
-Dette dashboardet gir en samlet og kontinuerlig oversikt over alle AI-modeller, deres bruk i NORSAIN, kostnadsnivå, tilhørende agenter og revisjonsstatus.
+Dette dashboardet gir en samlet og kontinuerlig oversikt over alle AI-modeller,
+deres bruk i NORSAIN, kostnadsnivå, tilhørende agenter og revisjonsstatus.
 
 Oppdateres kvartalsvis og ved større modellendringer i VS Code / GPT-økosystemet.
 
@@ -117,4 +118,4 @@ Oppdateres løpende.
 - KPI for modellbruk (per agent / per prosjekt).
 - Logging av kost-per-agent i GitHub Actions.
 
-# Slutt på dokument
+## Slutt på dokument

@@ -111,7 +111,7 @@ Validation utilities:
 Index generation utilities:
 
 - `generateKnowledgeIndex()` - Scans `knowledge/` recursively and returns non-hidden files (excludes `index.md`)
-- `createKnowledgeIndexFile()` - Writes `knowledge/index.md` with a headline, a `Total files` line and grouped file lists
+- `createKnowledgeIndexFile()` - Creates `knowledge/index.md` with headline, file count, and grouped lists
 
 Note: index generation groups files by the first directory level under `knowledge/` and sorts filenames alphabetically.
 
@@ -155,7 +155,8 @@ All scripts use ES modules (`.mts` extension) with:
 - **Node.js built-ins**: `fs/promises`, `path`, etc.
 - **No external dependencies**: Keeps runtime dependencies minimal
 
-Note about templates: the scaffolder expects templates under `gpt-packages/templates` (prefer `gpt-packages/templates/custom_gpt`).
+Note about templates: the scaffolder expects templates under `gpt-packages/templates`
+(prefer `gpt-packages/templates/custom_gpt`).
 
 Ensure one of these directories exists and contains the template files used to scaffold new GPTs.
 

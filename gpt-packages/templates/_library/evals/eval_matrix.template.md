@@ -10,7 +10,7 @@ next_review: 2026-05-20
 tags: [eval, matrix, template]
 ---
 
-# Evaluation Matrix (template)
+## Evaluation Matrix (template)
 
 Bruk denne malen for å definere eval-criteria, vekting og suksess-grenser
 for manual eller automatisert evaluering av en GPT-pakke.

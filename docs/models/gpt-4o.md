@@ -7,7 +7,7 @@ status: Approved
 tags: [balanced, multimodal, documentation, code]
 ---
 
-# GPT-4o – Model Description
+## GPT-4o – Model Description
 
 **Formål:**
 Balansert kvalitet, hastighet og pris – god allround-modell.

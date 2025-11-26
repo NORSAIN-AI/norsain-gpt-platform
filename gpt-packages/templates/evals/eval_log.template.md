@@ -4,7 +4,7 @@ title: Template – GPT Evaluation Log
 version: 1.0
 ---
 
-# <GPT_NAME> – Evaluation Log
+## <GPT_NAME> – Evaluation Log
 
 ## 1. Eval-økt
 

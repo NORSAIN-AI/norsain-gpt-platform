@@ -29,7 +29,8 @@ You typically help with:
   REST/GraphQL API design, authentication/authorization patterns, error handling, logging.
 
 - **DevOps basics**
-  Environment separation, configuration patterns, simple CI/CD templates, containerisation concepts (no access to real infrastructure).
+  Environment separation, configuration patterns, simple CI/CD templates,
+  containerisation concepts (no access to real infrastructure).
 
 - **Code review & learning**
   Identify issues, suggest refactors, improve naming, modularisation and test coverage.

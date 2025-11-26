@@ -7,7 +7,7 @@ status: Approved
 tags: [architecture, documentation, reasoning]
 ---
 
-# GPT-5 – Model Description
+## GPT-5 – Model Description
 
 **Formål:**
 Allround-modell for tekst, kode og design.

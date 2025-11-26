@@ -7,7 +7,7 @@ status: Approved
 tags: [fast, code, low-cost]
 ---
 
-# Grok Code Fast 1 – Model Description
+## Grok Code Fast 1 – Model Description
 
 **Formål:**
 Ekstremt rask modell optimalisert for kodegenerering.
