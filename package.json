@@ -6,6 +6,7 @@
   "scripts": {
     "scaffold": "tsx scripts/scaffold-gpt.mts",
     "validate": "tsx scripts/validate-gpt.mts",
+    "validate-templates": "tsx scripts/validate-templates.mts",
     "generate-index": "tsx scripts/generate-index.mts",
     "generate-repo-structure": "tsx scripts/generate-repo-structure.mts",
     "test": "vitest run",

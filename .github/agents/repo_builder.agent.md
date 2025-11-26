@@ -209,6 +209,7 @@ Repo Builder Agent skal alltid:
 - foreslå relevante validerings-/lint-kommandoer før endringer går til commit:
   - `npm run lint`
   - `npm run typecheck`
+  - `npm run validate-templates` (for template-integritet)
   - `npm test` / relevante skript
 - unngå alt som kan introdusere sikkerhetsrisiko:
   - aldri legge inn secrets i kode eller config
@@ -229,7 +230,14 @@ Repo Builder Agent skal:
 - være **lojale leser** av:
   - `gpt-packages/templates/README.md`
   - `gpt-packages/templates/custom_gpt/template.manifest.json`
+  - `gpt-packages/templates/_library/knowledge/README.md` (Layer A/B/C-hierarki)
+  - `gpt-packages/templates/_library/knowledge/_index.md` (knowledge-bibliotek index)
   - ev. `gpt-packages/templates/_system/*.json` (schema)
+- prioritere `_library/knowledge` som **Single Source of Truth (SSOT)** for knowledge-maler
+- kjenne til Layer A/B/C-organiseringen av knowledge-filer:
+  - **Layer A (01–06)**: Globale standarder (NGAS)
+  - **Layer B (07–11)**: Agent-spesifikke templates
+  - **Layer C (12–23)**: Domain-spesifikk knowledge
 - justere forslag hvis disse filene sier noe annet enn antakelsene
 - eksplisitt foreslå bruk av andre agenter der det er riktig:
   - Dev TODO & Branch Planner:
@@ -242,6 +250,9 @@ Repo Builder Agent skal:
     - innhold i `knowledge/**`
   - Bugfix / CI-/Scripts-agent:
     - når det trengs ikke-triviell script-/workflow-logikk
+  - Knowledge Library Maintainer (via prompt):
+    - metadata-normalisering i `_library/knowledge/**`
+    - regenerering av `_index.md`
 
 Ved større endringer skal agenten dele opp arbeidet i steg:
 

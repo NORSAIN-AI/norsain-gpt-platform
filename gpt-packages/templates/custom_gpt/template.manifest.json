@@ -37,8 +37,9 @@
 
   "library_includes": {
     "knowledge": [
-      "_library/knowledge/ngas_output_standards_v1.2.template.md",
-      "_library/knowledge/norsain_language_tone_guide.template.md"
+      "_library/knowledge/01-ngas-standards-index.md",
+      "_library/knowledge/02-language-tone-guide.md",
+      "_library/knowledge/03-output-standards-llm.md"
     ],
     "evals": ["_library/evals/eval_matrix.template.md"],
     "prompts": ["_library/prompts/build_custom_gpt.prompt.md"]
