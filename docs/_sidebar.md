@@ -1,7 +1,33 @@
-# Documentation
 
-- [Documentation Home](README.md)
+# Dokumentasjon
 
+- [Dokumentasjon Hjem](README.md)
+
+## 00–06: Kjerne
+- [00 Overblikk](00-overview/README.md)
+- [01 NGAS-standarder](01-ngas-standards/README.md)
+- [02 Custom GPT-design](02-custom-gpt-design/README.md)
+- [03 GPT-pakker](03-gpt-packages/README.md)
+- [04 Agenter](04-agents/README.md)
+- [05 Operasjoner](05-operations/README.md)
+- [06 Integrasjoner](06-integrations/README.md)
+
+## 07–11: Domene og rammeverk
+- [07 Governance](07-governance/model-governance-dashboard.md)
+- [08 Modellkatalog](08-models/_index.md)
+  - [Model Selection Strategy](08-models/model-selection-strategy.md)
+- [09 Planlegging](09-planning/README.md)
+- [10 Prompt Engineering Framework](10-prompt-engineering-framework/README.md)
+- [11 Testing](11-testing/README.md)
+
+## 99: Appendiks
+- [Appendiks](99-appendix/README.md)
+
+## Maler (kun for forfattere)
+- [Dokumentmaler]( _templates/README.md )
+
+<!-- Kommentarer og gamle lenker under: -->
+<!--
 - Models
   - [Model Index](models/_index.md)
   - [GPT-5.1 Codex](models/gpt-5.1-codex.md)
@@ -20,12 +46,4 @@
 - Governance
   - [Model Selection Strategy](model-selection-strategy.md)
   - [Model Governance Dashboard](governance/model-governance-dashboard.md)
-
-- Architecture
-  - (legg til når filer finnes)
-
-- QMS/IMS
-  - (legg til når filer finnes)
-
-- Agents
-  - (legg til agent-dokumentasjon etter behov)
+-->

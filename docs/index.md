@@ -1,4 +1,17 @@
-# NORSAIN GPT Platform – Dokumentasjon
+
+---
+title: "docs-site-index"
+status: "draft"
+date: "2025-11-30"
+authors: "platform-architecture"
+tags:
+  - documentation
+  - site-index
+supersedes: ""
+superseded_by: ""
+---
+
+# LLM Platform – Dokumentasjon
 
 Denne dokumentasjonen samler retningslinjer, modeller og arbeidsflyt for hvordan NORSAIN
 bruker og forvalter språkmodeller i `llm`.
@@ -17,7 +30,7 @@ Hovedområder:
 
 Hvordan vi velger riktig modell til riktig oppgave, med fokus på kost, latency, kvalitet og risiko.
 
-- [Model selection strategy](model-selection-strategy.md)
+- [Model selection strategy](08-models/model-selection-strategy.md)
 
 Bruk denne siden som “golden path” når du skal velge modell til nye GPT-pakker, agenter eller actions.
 
@@ -27,22 +40,23 @@ Bruk denne siden som “golden path” når du skal velge modell til nye GPT-pak
 
 Oversikt over modeller vi bruker eller vurderer, med kort beskrivelse av styrker, svakheter og typiske use case.
 
-- [Modellkatalog – oversikt](models/_index.md)
+
+- [Modellkatalog – oversikt](08-models/_index.md)
 
 Enkeltmodeller:
 
-- [Claude Haiku 4.5](models/claude-haiku-4.5.md)
-- [Claude Sonnet 4.5](models/claude-sonnet-4.5.md)
-- [Gemini 2.5 Pro](models/gemini-2.5-pro.md)
-- [GPT-4.1](models/gpt-4.1.md)
-- [GPT-4o](models/gpt-4o.md)
-- [GPT-5 Mini](models/gpt-5-mini.md)
-- [GPT-5 Codex](models/gpt-5-codex.md)
-- [GPT-5.1](models/gpt-5.1.md)
-- [GPT-5.1 Codex](models/gpt-5.1-codex.md)
-- [GPT-5](models/gpt-5.md)
-- [Grok Code Fast 1](models/grok-code-fast-1.md)
-- [Raptor Mini](models/raptor-mini.md)
+- [Claude Haiku 4.5](08-models/claude-haiku-4.5.md)
+- [Claude Sonnet 4.5](08-models/claude-sonnet-4.5.md)
+- [Gemini 2.5 Pro](08-models/gemini-2.5-pro.md)
+- [GPT-4.1](08-models/gpt-4.1.md)
+- [GPT-4o](08-models/gpt-4o.md)
+- [GPT-5 Mini](08-models/gpt-5-mini.md)
+- [GPT-5 Codex](08-models/gpt-5-codex.md)
+- [GPT-5.1](08-models/gpt-5.1.md)
+- [GPT-5.1 Codex](08-models/gpt-5.1-codex.md)
+- [GPT-5](08-models/gpt-5.md)
+- [Grok Code Fast 1](08-models/grok-code-fast-1.md)
+- [Raptor Mini](08-models/raptor-mini.md)
 
 ---
 
@@ -50,7 +64,7 @@ Enkeltmodeller:
 
 Styring, overvåkning og rapportering rundt modellbruk.
 
-- [Model governance dashboard](governance/model-governance-dashboard.md)
+- [Model governance dashboard](07-governance/model-governance-dashboard.md)
 
 Her samler vi KPI-er, risikoindikatorer og beslutningsgrunnlag knyttet til modellbruk i NORSAIN.
 
@@ -60,8 +74,8 @@ Her samler vi KPI-er, risikoindikatorer og beslutningsgrunnlag knyttet til model
 
 Planlegging av arbeid på GPT-pakker, templates og relaterte scripts.
 
-- [Planning index](planning/INDEX.md)
-- [TODOs for GPT packages](planning/TODOs-gpt-packages.md)
+- [Planning index](09-planning/INDEX.md)
+- [TODOs for GPT packages](09-planning/TODOs-gpt-packages.md)
 
 Bruk disse sidene som arbeidsflate for å planlegge neste iterasjoner på GPT-pakker og modellbiblioteket.
 
@@ -71,7 +85,7 @@ Bruk disse sidene som arbeidsflate for å planlegge neste iterasjoner på GPT-pa
 
 Standard for testing av GPT-relatert kode (spesielt i TypeScript/Node).
 
-- [Vitest standard](testing/vitest-standard.md)
+- [Vitest standard](11-testing/vitest-standard.md)
 
 Denne beskriver hvordan vi setter opp Vitest, hvilke krav vi har til dekning og hvordan testskript bør organiseres.
 
@@ -83,11 +97,11 @@ Denne beskriver hvordan vi setter opp Vitest, hvilke krav vi har til dekning og 
 
 - Start her i `index.md` for å få oversikt.
 - Gå videre inn på:
-  - modellvalg → `model-selection-strategy.md`
-  - konkrete modeller → `models/`
-  - governance → `governance/`
-  - planlegging → `planning/`
-  - testing → `testing/`
+  - modellvalg → `08-models/model-selection-strategy.md`
+  - konkrete modeller → `08-models/`
+  - governance → `07-governance/`
+  - planlegging → `09-planning/`
+  - testing → `11-testing/`
 
 Når nye sider legges til under `docs/`, oppdater:
 
