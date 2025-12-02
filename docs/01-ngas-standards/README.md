@@ -1,3 +1,3 @@
-# 01-ngas-standards
+# Knowledge library (flyttet til docs/01-ngas-standards)
 
-Sammendrag og pekere til NGAS SoT (kommer senere).
+Alle kunnskapsfiler er nå flyttet til docs/01-ngas-standards/. Denne mappen beholdes kun for struktur.
