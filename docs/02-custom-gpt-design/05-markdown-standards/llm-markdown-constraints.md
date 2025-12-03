@@ -10,11 +10,12 @@ supersedes: ""
 superseded_by: ""
 ---
 
-# llm-markdown-constraints (placeholder)
+## llm-markdown-constraints (placeholder)
 
 ## 1. Formål
 
 Dette er en plassholder for markdown- og lint-regler for Custom GPT.
+
 
 ## 2. Omfang
 
