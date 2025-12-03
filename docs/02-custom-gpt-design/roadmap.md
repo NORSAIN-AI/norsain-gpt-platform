@@ -7,7 +7,7 @@ status: draft
 description: Videreutviklingsplan for Custom GPT-design-standarden.
 ---
 
-# Roadmap for Custom GPT Design
+## Roadmap for Custom GPT Design
 
 Her beskrives hva som skal bygges videre, forbedringer for neste versjoner og plan for LLM Platform v1.1 → v2.0.
 

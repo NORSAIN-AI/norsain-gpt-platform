@@ -7,7 +7,7 @@ status: draft
 description: Høy-nivå forklaring av NORSAIN Custom GPT, formål og mål.
 ---
 
-# Oversikt: NORSAIN Custom GPT
+## Oversikt: NORSAIN Custom GPT
 
 Her kommer en høy-nivå forklaring av hva en NORSAIN Custom GPT er, hvorfor standarden finnes, og hvilke mål plattformen støtter.
 

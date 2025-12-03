@@ -7,8 +7,9 @@ status: draft
 description: Teknisk arkitektur og lagdeling for NORSAIN Custom GPT.
 ---
 
-# Arkitektur for Custom GPT
+## Arkitektur for Custom GPT
 
-Her beskrives den tekniske arkitekturen: system prompt, instruction stack, knowledge, actions, rollefordeling og samspill med gpt-packages og agents.
+Her beskrives den tekniske arkitekturen: system prompt, instruction stack, knowledge, actions, rollefordeling
+og samspill med gpt-packages og agents.
 
 *Oppdateres i neste steg.*

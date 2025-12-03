@@ -7,8 +7,9 @@ status: draft
 description: Samlede prinsipper for NORSAIN Custom GPT-design.
 ---
 
-# Designprinsipper for Custom GPT
+## Designprinsipper for Custom GPT
 
-Her samles alle grunnleggende prinsipper: determinisme, klarhet, struktur, prioriteringshierarki, sikkerhet, ask-vs-infer, adferdsforutsigbarhet.
+Her samles alle grunnleggende prinsipper: determinisme, klarhet, struktur, prioriteringshierarki, sikkerhet,
+ask-vs-infer, adferdsforutsigbarhet.
 
 *Oppdateres i neste steg.*
